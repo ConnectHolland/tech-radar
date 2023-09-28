@@ -296,29 +296,31 @@ function radar_visualization(config) {
         .style("font-family", "Arial, Helvetica")
         .style("font-size", "18px");
       for (var ring = 0; ring < 4; ring++) {
-        legend.append("text")
-          .attr("transform", legend_transform(quadrant, ring))
-          .text(config.rings[ring].name)
-          .style("font-family", "Arial, Helvetica")
-          .style("font-size", "12px")
-          .style("font-weight", "bold");
-        legend.selectAll(".legend" + quadrant + ring)
-          .data(segmented[quadrant][ring])
-          .enter()
-            .append("a")
-                .attr("href", function (d, i) {
-                  return d.link ? d.link : "#"; // stay on same page if no link was provided
-                })
-            .append("text")
-              .attr("transform", function(d, i) { return legend_transform(quadrant, ring, i); })
-              .attr("class", "legend" + quadrant + ring)
-              .attr("id", function(d, i) { return "legendItem" + d.id; })
-              .text(function(d, i) { return d.id + ". " + d.label; })
-              .style("font-family", "Arial, Helvetica")
-              .style("font-size", "11px")
-              .on("mouseover", function(d) { showBubble(d); highlightLegendItem(d); })
-              .on("mouseout", function(d) { hideBubble(d); unhighlightLegendItem(d); });
-      }
+        if (config.quadrants[quadrant].name != "") {        
+          legend.append("text")
+            .attr("transform", legend_transform(quadrant, ring))
+            .text(config.rings[ring].name)
+            .style("font-family", "Arial, Helvetica")
+            .style("font-size", "12px")
+            .style("font-weight", "bold");
+          legend.selectAll(".legend" + quadrant + ring)
+            .data(segmented[quadrant][ring])
+            .enter()
+              .append("a")
+                  .attr("href", function (d, i) {
+                    return d.link ? d.link : "#"; // stay on same page if no link was provided
+                  })
+              .append("text")
+                .attr("transform", function(d, i) { return legend_transform(quadrant, ring, i); })
+                .attr("class", "legend" + quadrant + ring)
+                .attr("id", function(d, i) { return "legendItem" + d.id; })
+                .text(function(d, i) { return d.id + ". " + d.label; })
+                .style("font-family", "Arial, Helvetica")
+                .style("font-size", "11px")
+                .on("mouseover", function(d) { showBubble(d); highlightLegendItem(d); })
+                .on("mouseout", function(d) { hideBubble(d); unhighlightLegendItem(d); });
+          }
+        }
     }
   }
 

@@ -2,7 +2,7 @@
 
 <head>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
-    <title>Tech Radar | Harborn digital agency</title>
+    <title>Tech Radar | Harborn Digital</title>
     <link rel="shortcut icon" href="https://www.harborn.com/favicon-lime.svg">
 
     <script src="https://d3js.org/d3.v4.min.js"></script>
@@ -60,13 +60,13 @@
                 "active": true,
                 "moved": 0
             },
-            // {
-            //     "quadrant": LANGUAGE,
-            //     "ring": COMPETENT,
-            //     "label": "Percy",
-            //     "active": true,
-            //     "moved": -1
-            // },
+            {
+                "quadrant": DEVOPS,
+                "ring": COMPETENT,
+                "label": "PHP-fpm",
+                "active": true,
+                "moved": 1
+            },
             // {
             //     "quadrant": LANGUAGE,
             //     "ring": COMPETENT,
@@ -114,7 +114,7 @@
                 "ring": CORE,
                 "label": "Github Actions",
                 "active": true,
-                "moved": 1
+                "moved": 0
             },
             // {
             //     "quadrant": LANGUAGE,
@@ -144,13 +144,20 @@
                 "active": true,
                 "moved": 0
             },
-            // {
-            //     "quadrant": LANGUAGE,
-            //     "ring": EXPLORE,
-            //     "label": "Stoplight",
-            //     "active": true,
-            //     "moved": 0
-            // },
+            {
+                "quadrant": DATA,
+                "ring": COMPETENT,
+                "label": "Prometheus",
+                "active": true,
+                "moved": 1
+            },
+            {
+                "quadrant": DATA,
+                "ring": EXPLORE,
+                "label": "Karpenter",
+                "active": true,
+                "moved": 1
+            },            
             {
                 "quadrant": DATA,
                 "ring": COMPETENT,
@@ -163,7 +170,7 @@
                 "ring": EXPLORE,
                 "label": "Django",
                 "active": true,
-                "moved": 1
+                "moved": 0
             },
             {
                 "quadrant": PLATFORM,
@@ -174,10 +181,10 @@
             },
             {
                 "quadrant": PLATFORM,
-                "ring": CORE,
+                "ring": MAINTAIN,
                 "label": "Symfony",
                 "active": true,
-                "moved": 0
+                "moved": -1
             },
             {
                 "quadrant": LANGUAGE,
@@ -209,31 +216,38 @@
             },
             {
                 "quadrant": LANGUAGE,
-                "ring": COMPETENT,
+                "ring": MAINTAIN,
                 "label": "Swift",
                 "active": true,
                 "moved": -1
             },
             {
                 "quadrant": LANGUAGE,
-                "ring": COMPETENT,
+                "ring": MAINTAIN,
                 "label": "Kotlin",
                 "active": true,
-                "moved": 0
+                "moved": -1
             },
             {
                 "quadrant": LANGUAGE,
-                "ring": COMPETENT,
+                "ring": CORE,
                 "label": "Dart",
                 "active": true,
-                "moved": 0
+                "moved": 1
             },
             {
                 "quadrant": PLATFORM,
-                "ring": COMPETENT,
+                "ring": CORE,
                 "label": "Flutter Mobile",
                 "active": true,
-                "moved": 0
+                "moved": 1
+            },
+            {
+                "quadrant": PLATFORM,
+                "ring": EXPLORE,
+                "label": "Flutter Web",
+                "active": true,
+                "moved": 1
             },
             {
                 "quadrant": LANGUAGE,
@@ -244,10 +258,10 @@
             },
             {
                 "quadrant": PLATFORM,
-                "ring": CORE,
+                "ring": MAINTAIN,
                 "label": "API Platform",
                 "active": true,
-                "moved": 0
+                "moved": -1
             },
             {
                 "quadrant": LANGUAGE,
@@ -289,11 +303,11 @@
                 "ring": CORE,
                 "label": "ReactJS",
                 "active": true,
-                "moved": 1
+                "moved": 0
             },
             {
                 "quadrant": PLATFORM,
-                "ring": COMPETENT,
+                "ring": CORE,
                 "label": "NextJS",
                 "active": true,
                 "moved": 1
@@ -303,29 +317,8 @@
                 "ring": COMPETENT,
                 "label": "Laravel",
                 "active": true,
-                "moved": 1
-            },
-            {
-                "quadrant": PLATFORM,
-                "ring": EXPLORE,
-                "label": "Svelte",
-                "active": true,
                 "moved": 0
-            },
-            {
-                "quadrant": PLATFORM,
-                "ring": MAINTAIN,
-                "label": "iOS",
-                "active": true,
-                "moved": 0
-            },
-            {
-                "quadrant": PLATFORM,
-                "ring": MAINTAIN,
-                "label": "Android",
-                "active": true,
-                "moved": 0
-            },
+            },            
             // End Languages Quadrant
             // Start Data Quadrant
             {
@@ -355,29 +348,15 @@
                 "ring": COMPETENT,
                 "label": "Nginx",
                 "active": true,
-                "moved": -1
+                "moved": 0
             },
             {
                 "quadrant": DEVOPS,
                 "ring": COMPETENT,
                 "label": "Apache",
                 "active": true,
-                "moved": -1
-            },
-            // {
-            //     "quadrant": DEVOPS,
-            //     "ring": COMPETENT,
-            //     "label": "OpenLitespeed",
-            //     "active": true,
-            //     "moved": 1
-            // },
-            {
-                "quadrant": DEVOPS,
-                "ring": MAINTAIN,
-                "label": "HAProxy",
-                "active": true,
                 "moved": 0
-            },
+            },            
             {
                 "quadrant": DEVOPS,
                 "ring": COMPETENT,
@@ -394,10 +373,10 @@
             },
             {
                 "quadrant": DEVOPS,
-                "ring": CORE,
+                "ring": MAINTAIN,
                 "label": "Serverless",
                 "active": true,
-                "moved": 0
+                "moved": -1
             },            
             {
                 "quadrant": DEVOPS,
@@ -417,17 +396,31 @@
             {
                 "quadrant": DATA,
                 "ring": EXPLORE,
-                "label": "Snowflake",
+                "label": "LiteLLM",
                 "active": true,
-                "moved": 0
+                "moved": 1
             },
             {
                 "quadrant": DATA,
-                "ring": EXPLORE,
+                "ring": COMPETENT,
+                "label": "Claud",
+                "active": true,
+                "moved": 1
+            },
+            {
+                "quadrant": DATA,
+                "ring": COMPETENT,
                 "label": "PostgreSQL",
                 "active": true,
-                "moved": 0
+                "moved": 1
             },
+            {
+                "quadrant": DATA,
+                "ring": CORE,
+                "label": "LangChain",
+                "active": true,
+                "moved": 1
+            },            
             {
                 "quadrant": DATA,
                 "ring": MAINTAIN,
@@ -444,39 +437,18 @@
             },
             {
                 "quadrant": DATA,
+                "ring": COMPETENT,
+                "label": "Azure SQL Server",
+                "active": true,
+                "moved": 1
+            },            
+            {
+                "quadrant": DATA,
                 "ring": CORE,
                 "label": "OpenAI models",
                 "active": true,
                 "moved": 0
-            },
-            {
-                "quadrant": DEVOPS,
-                "ring": EXPLORE,
-                "label": "Longhorn",
-                "active": true,
-                "moved": 1
-            },
-            // {
-            //     "quadrant": DATA,
-            //     "ring": MAINTAIN,
-            //     "label": "SpaCy",
-            //     "active": true,
-            //     "moved": -1
-            // },
-            {
-                "quadrant": DATA,
-                "ring": MAINTAIN,
-                "label": "FlairNLP",
-                "active": true,
-                "moved": 0
-            },
-            {
-                "quadrant": DATA,
-                "ring": EXPLORE,
-                "label": "Tensorflow",
-                "active": true,
-                "moved": 0
-            },
+            },            
             {
                 "quadrant": DATA,
                 "ring": COMPETENT,
@@ -489,7 +461,7 @@
                 "ring": COMPETENT,
                 "label": "LLM",
                 "active": true,
-                "moved": 1
+                "moved": 0
             },            
             // End of Data Quadrant
             // Start of Platforms Quadrant
@@ -505,14 +477,14 @@
                 "ring": MAINTAIN,
                 "label": "Sylius",
                 "active": true,
-                "moved": -1
+                "moved": 0
             },
             {
                 "quadrant": PLATFORM,
                 "ring": CORE,
                 "label": "FastAPI",
                 "active": true,
-                "moved": 1
+                "moved": 0
             },
             {
                 "quadrant": PLATFORM,
@@ -526,13 +498,6 @@
                 "ring": MAINTAIN,
                 "label": "Flask",
                 "active": true,
-                "moved": -1
-            },
-            {
-                "quadrant": PLATFORM,
-                "ring": COMPETENT,
-                "label": "AWS Powertools",
-                "active": true,
                 "moved": 0
             },
             {
@@ -540,14 +505,14 @@
                 "ring": CORE,
                 "label": "Azure",
                 "active": true,
-                "moved": 1
+                "moved": 0
             },
             {
                 "quadrant": DEVOPS,
-                "ring": EXPLORE,
+                "ring": MAINTAIN,
                 "label": "FrankenPHP",
                 "active": true,
-                "moved": 1
+                "moved": -1
             },
             // End of Platforms Quadrant
         ]
@@ -612,21 +577,21 @@
                 "ring": COMPETENT,
                 "label": "Google Analytics",
                 "active": true,
-                "moved": -1
+                "moved": 0
             },
             {
                 "quadrant": MARKETING,
-                "ring": EXPLORE,
+                "ring": MAINTAIN,
                 "label": "Typeform",
                 "active": true,
                 "moved": -1
             },
             {
                 "quadrant": MARKETING,
-                "ring": EXPLORE,
+                "ring": COMPETENT,
                 "label": "MS Clarity",
                 "active": true,
-                "moved": 0
+                "moved": 1
             },
             {
                 "quadrant": CMS,
@@ -647,7 +612,7 @@
                 "ring": CORE,
                 "label": "Adobe Firefly",
                 "active": true,
-                "moved": 1
+                "moved": 0
             },
             {
                 "quadrant": UX,
@@ -675,14 +640,14 @@
                 "ring": CORE,
                 "label": "Adobe Photoshop",
                 "active": true,
-                "moved": 1
+                "moved": 0
             },
             {
                 "quadrant": UX,
                 "ring": CORE,
                 "label": "ChatGPT-4",
                 "active": true,
-                "moved": 1
+                "moved": 0
             },
             {
                 "quadrant": CMS,
@@ -721,38 +686,31 @@
             },
             {
                 "quadrant": CMS,
-                "ring": MAINTAIN,
+                "ring": EXPLORE,
                 "label": "Drupal",
                 "active": true,
-                "moved": 0
+                "moved": 1
             },
             {
                 "quadrant": CMS,
                 "ring": MAINTAIN,
                 "label": "Strapi",
                 "active": true,
-                "moved": -1
+                "moved": 0
             },
             {
                 "quadrant": UX,
                 "ring": EXPLORE,
                 "label": "Spline",
                 "active": true,
-                "moved": 1
+                "moved": 0
             },
             {
                 "quadrant": UX,
                 "ring": EXPLORE,
                 "label": "Framer",
                 "active": true,
-                "moved": 1
-            },
-            {
-                "quadrant": UX,
-                "ring": EXPLORE,
-                "label": "Webflow",
-                "active": true,
-                "moved": 1
+                "moved": 0
             },
         ]
         //ENTRIES
